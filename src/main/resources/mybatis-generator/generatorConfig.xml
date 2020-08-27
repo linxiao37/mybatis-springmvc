@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="MBG" targetRuntime="MyBatis3" defaultModelType="conditional">
+        <!--生成mapper.xml时覆盖原文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+        <!-- 生成注释配置 -->
+        <commentGenerator>
+            <!-- 不生成任何注释 -->
+            <property name="suppressAllComments" value="true"/>
+            <!-- 不希望生成的注释中包含时间戳 -->
+            <!-- <property name="suppressDate" value="true"/> -->
+            <!-- 添加 db 表中字段的注释 -->
+            <!-- <property name="addRemarkComments" value="true"/> -->
+        </commentGenerator>
+
+        <!-- 配置插件 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/mybatis_test"
+                        userId="root"
+                        password="root">
+        </jdbcConnection>
+        <!-- 类型解析器 -->
+        <javaTypeResolver>
+            <!--是否使用 bigDecimal，默认false。
+                false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer
+                true，把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal-->
+            <property name="forceBigDecimals" value="false"/>
+            <!--默认false
+            false，将所有 JDBC 的时间类型解析为 java.util.Date
+            true，将 JDBC 的时间类型按如下规则解析
+            DATE	                -> java.time.LocalDate
+            TIME	                -> java.time.LocalTime
+            TIMESTAMP                   -> java.time.LocalDateTime
+            TIME_WITH_TIMEZONE  	-> java.time.OffsetTime
+            TIMESTAMP_WITH_TIMEZONE	-> java.time.OffsetDateTime
+            -->
+            <!-- <property name="useJSR310Types" value="true"/> -->
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.alan.mybatis.model" targetProject="src/main/java">
+            <!-- 实体类 -->
+            <!-- 是否让schema作为包的后缀，默认为false -->
+            <property name="enableSubPackages" value="true"/>
+            <!-- 是否针对string类型的字段在set方法中进行修剪，默认false -->
+            <!-- <property name="trimStrings" value="true"/> -->
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="src/main/resources">
+            <!-- 实体类SQL映射文件 -->
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- Mapper接口 -->
+        <!-- type="XMLMAPPER" 生成xml形式sql type="ANNOTATEDMAPPER" 生成注解形式sql -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.alan.mybatis.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- 基础表 -->
+        <!-- schema为数据库名，oracle需要配置，mysql不需要配置。
+            tableName为对应的数据库表名
+            domainObjectName 是要生成的实体类名(可以不指定)
+            enableXXXByExample 默认为 true， 为 true 会生成一个对应Example帮助类，帮助你进行条件查询，不想要可以设为false
+            -->
+        <table tableName="person" domainObjectName="Person" mapperName="PersonMapper"/>
+    </context>
+</generatorConfiguration>

@@ -2,13 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2a99ac5-0e1a-489c-bd08-cd5dfdaab326" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/mapper/PersonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/model/PersonExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/service/IPersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/service/impl/PersonServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PersonMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/alan/mybatis/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/alan/mybatis/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,22 +46,75 @@
     </option>
   </component>
   <component name="ProjectId" id="1gOhtJRVNL8j8sKDdSjKveLrLtp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.alan.mybatis.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xiaolin35\IdeaProjects\mybatis-springmvc\mybatis-springmvc\src\test\resources" />
+      <recent name="C:\Users\xiaolin35\IdeaProjects\mybatis-springmvc\mybatis-springmvc\src\main\resources\spring" />
+      <recent name="C:\Users\xiaolin35\IdeaProjects\mybatis-springmvc\mybatis-springmvc\src\main\resources" />
+      <recent name="C:\Users\xiaolin35\IdeaProjects\mybatis-springmvc\mybatis-springmvc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PersonTest.testPerson">
+    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alan.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.alan.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.alan.mybatis.PersonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.testPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alan.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.alan.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.alan.mybatis.PersonTest" />
+      <option name="METHOD_NAME" value="testPerson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PersonTest.testPerson" />
+        <item itemvalue="JUnit.PersonTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -50,33 +126,125 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597991759302</updated>
-      <workItem from="1597991771066" duration="1463000" />
+      <workItem from="1597991771066" duration="37151000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1598004276204">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1598513871410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598004276204" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1598004276203">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598513871410" />
+    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598516945874">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598004276203" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1598004276203">
+    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598516945874" />
+    <state x="602" y="117" key="#xdebugger.XInspectDialog" timestamp="1598521733017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598004276203" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1598004276203">
+    <state x="602" y="117" key="#xdebugger.XInspectDialog/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598521733017" />
+    <state width="473" height="466" key="DebuggerActiveHint" timestamp="1598529353946">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598004276203" />
-    <state x="186" y="0" key="SettingsEditor" timestamp="1597992010830">
+    <state width="473" height="466" key="DebuggerActiveHint/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529353946" />
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1598529612971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="0" key="SettingsEditor/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1597992010830" />
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529612971" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598429895599" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1598529612970">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529612970" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598429895599" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1598529612970">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529612970" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598429895599" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1598529612970">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529612970" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598429895599" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1598529605203">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529605203" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1598529605202">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529605202" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1598529605202">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529605202" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1598529605203">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529605203" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1598518169937">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598518169937" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1598519060279">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598519060279" />
+    <state x="333" y="119" width="1033" height="490" key="find.popup" timestamp="1598524176453">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="333" y="119" width="1033" height="490" key="find.popup/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598524176453" />
+    <state x="57" y="68" key="new project wizard" timestamp="1598494502785">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="57" y="68" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1598494502785" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/alan/mybatis/PersonTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/net/URLClassLoader.java</url>
+          <line>356</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/xiaolin35/maven/.m2/repository/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE-sources.jar!/org/springframework/core/io/support/PropertiesLoaderSupport.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/xiaolin35/maven/.m2/repository/org/mybatis/mybatis-spring/2.0.5/mybatis-spring-2.0.5-sources.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.java</url>
+          <line>386</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/xiaolin35/maven/.m2/repository/org/mybatis/mybatis-spring/2.0.5/mybatis-spring-2.0.5-sources.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.java</url>
+          <line>336</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/xiaolin35/maven/.m2/repository/org/mybatis/mybatis-spring/2.0.5/mybatis-spring-2.0.5-sources.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.java</url>
+          <line>248</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="classLoader" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
