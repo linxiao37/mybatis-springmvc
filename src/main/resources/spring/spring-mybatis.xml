@@ -8,37 +8,33 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        default-autowire="byName">
     <!-- 引入数据库配置文件 -->
-    <!-- <context:property-placeholder location="classpath:jdbc.properties" ignore-unresolvable="true"/> -->
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="ignoreUnresolvablePlaceholders" value="true" />
-        <property name="locations">
-            <list>
-                <value>classpath:jdbc.properties</value>
-            </list>
-        </property>
-    </bean>
+    <context:property-placeholder location="classpath:jdbc.properties" ignore-unresolvable="true"/>
     <!-- 配置数据源 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close"
-        p:driverClassName="com.mysql.cj.jdbc.Driver"
-        p:url="jdbc:mysql://localhost:3306/mybatis_test?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=true"
-        p:username="root"
+        p:driverClassName="${datasource.driver.class.name}"
+        p:url="${datasource.url}"
+        p:username="${datasource.username}"
         p:password="${datasource.password}"/>
 
     <!-- 配置sqlSessionFactory
         configLocation : mybatis 配置文件地址
         mapperLocations: mapper.xml 地址
      -->
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+    <bean id="mySqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
         p:dataSource-ref="dataSource"
         p:configLocation="classpath:mybatis/mybatis-config.xml"
         p:mapperLocations="classpath:mybatis/mapper/*.xml"/>
 
-    <!-- 配置mapper 扫描器 -->
-    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
+    <!-- 有2种方式，一种是使用MapperScannerConfigurer扫描实例化mapper,另一种是通过sqlSessionTemplate获取mapper -->
+    <!-- 配置mapper 扫描器 注：sqlSessionFactoryBeanName使用这种方式引入sqlSessionFactory，并且名称不能为sqlSessionFactory
+     不满足这两种情况，会出现导入数据源使用${}通配符将无法识别导入 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
         p:basePackage="com.alan.mybatis.mapper"
-        p:sqlSessionFactoryBeanName="sqlSessionFactory"/>-->
-    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
-        <constructor-arg index="0" ref="sqlSessionFactory"/>
+        p:sqlSessionFactoryBeanName="mySqlSessionFactory"/>
+
+    <!-- sqlSessionTemplate 方式 -->
+    <!-- <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="mySqlSessionFactory"/>
         <constructor-arg index="1" value="SIMPLE"/>
-    </bean>
+    </bean> -->
 </beans>

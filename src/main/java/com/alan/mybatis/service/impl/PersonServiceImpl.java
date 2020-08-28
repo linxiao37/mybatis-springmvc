@@ -21,14 +21,14 @@ import java.util.List;
 @Service
 public class PersonServiceImpl implements IPersonService {
 
-    //@Autowired
-    //private PersonMapper personMapper;
-    @Resource
-    private SqlSessionTemplate sqlSessionTemplate;
+    @Autowired
+    private PersonMapper personMapper;
+    // @Resource
+    // private SqlSessionTemplate sqlSessionTemplate;
 
     @Override
     public List<Person> selectList() {
-        PersonMapper personMapper = sqlSessionTemplate.getMapper(PersonMapper.class);
+        // PersonMapper personMapper = sqlSessionTemplate.getMapper(PersonMapper.class);
         PersonExample example = new PersonExample();
         return personMapper.selectByExample(example);
     }
