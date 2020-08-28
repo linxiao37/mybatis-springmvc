@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2a99ac5-0e1a-489c-bd08-cd5dfdaab326" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/mapper/PersonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/model/PersonExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/service/IPersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/service/impl/PersonServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PersonMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/alan/mybatis/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/alan/mybatis/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/service/impl/PersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alan/mybatis/service/impl/PersonServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +46,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
@@ -77,7 +66,7 @@
       <recent name="C:\Users\xiaolin35\IdeaProjects\mybatis-springmvc\mybatis-springmvc" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersonTest.testPerson">
+  <component name="RunManager" selected="JUnit.PersonTest">
     <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-springmvc" />
       <extension name="coverage">
@@ -111,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PersonTest.testPerson" />
         <item itemvalue="JUnit.PersonTest" />
+        <item itemvalue="JUnit.PersonTest.testPerson" />
       </list>
     </recent_temporary>
   </component>
@@ -126,8 +115,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597991759302</updated>
-      <workItem from="1597991771066" duration="37151000" />
+      <workItem from="1597991771066" duration="38739000" />
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1598529857001</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598529857001</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1598513871410">
@@ -149,50 +148,58 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="602" y="117" key="#xdebugger.XInspectDialog/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598521733017" />
-    <state width="473" height="466" key="DebuggerActiveHint" timestamp="1598529353946">
+    <state x="179" y="0" key="CommitChangelistDialog2" timestamp="1598582174729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="473" height="466" key="DebuggerActiveHint/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529353946" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1598529612971">
+    <state x="179" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582174729" />
+    <state width="473" height="466" key="DebuggerActiveHint" timestamp="1598582098891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529612971" />
+    <state width="473" height="466" key="DebuggerActiveHint/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582098891" />
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1598582070007">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582070007" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598429895599" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1598529612970">
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1598582070007">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529612970" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582070007" />
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598429895599" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1598529612970">
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1598582070007">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529612970" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582070007" />
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598429895599" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1598529612970">
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1598582070007">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529612970" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582070007" />
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598429895599" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1598529605203">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1598582073440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529605203" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1598529605202">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582073440" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1598582073439">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529605202" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1598529605202">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582073439" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1598582073439">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529605202" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1598529605203">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582073439" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1598582073439">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529605203" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598582073439" />
     <state x="186" y="0" key="SettingsEditor" timestamp="1598518169937">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598518169937" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1598529858950">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-137.1920.1040@0.0.1366.728" timestamp="1598529858950" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1598519060279">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -238,6 +245,11 @@
           <url>jar://D:/xiaolin35/maven/.m2/repository/org/mybatis/mybatis-spring/2.0.5/mybatis-spring-2.0.5-sources.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.java</url>
           <line>248</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/alan/mybatis/service/impl/PersonServiceImpl.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
